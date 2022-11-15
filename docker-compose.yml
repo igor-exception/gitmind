@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  app:
+    image: gitmind
+    volumes:
+      - type: bind
+        #source: C:\Users\igoro\'Meu Drive (igoroliveira.oliveira@gmail.com)'\_mindmup\estudo_tecnologia_mapas_mentais
+        # C:\\Users\\igoro\\Meu Drive (igoroliveira.oliveira@gmail.com)\\_mindmup\\estudo_tecnologia_mapas_mentais
+        source: C:\Users\igoro\Meu Drive (igoroliveira.oliveira@gmail.com)\_mindmup\estudo_tecnologia_mapas_mentais
+        target: /root/gitmind
+    stdin_open: true
+    tty: true
